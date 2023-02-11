@@ -60,8 +60,8 @@ describe('CarService Suite Tests', () => {
     it('given a carCategory it should return an available car', async () => {
         const car = mocks.validCar
         const carCategory = Object.create(mocks.validCarCategory)
-        carCategory.carids = [car.id]
-
+        carCategory.carIds = [car.id]
+        
         sandbox.stub(
             carService.carRepository,
             carService.carRepository.find.name,
@@ -71,9 +71,10 @@ describe('CarService Suite Tests', () => {
             carService,
             carService.chooseRandomCar.name,
         )
+        
 
         const result = await carService.getAvailableCar(carCategory)
-        const expected = car 
+        const expected = car
         
         expect(carService.chooseRandomCar.calledOnce).to.be.ok
         expect(carService.carRepository.find.calledWithExactly(car.id)).to.be.ok
