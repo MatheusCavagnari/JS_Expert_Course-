@@ -1,0 +1,44 @@
+regex101.com
+/^\d{3}.\d{3}.\d{3}-\d{2}$/gm
+
+123.123.123-14
+321.123.345-20
+200.300.500.19
+
+replace [.-] - vazio
+
+^(\w+),\s(\w+)$
+Cavagnari, Matheus
+Gomes, Laila
+Johnson, Jose
+
+replace ^(\w+),\s(\w+)$ por {firstName: "$2", lastName: "$1" }
+
+resultado:
+{firstName: "Matheus", lastName: "Cavagnari" }
+{firstName: "Laila", lastName: "Gomes" }
+{firstName: "Jose", lastName: "Johnson" }
+
+----------------------
+
+\[(.*?)\]\(([http|https].*)?\)
+
+O [Mathues Cavagnari](https://erickwendeal.com) faz palestras e você devia
+segui-lo lá no [Twitter](http://twitter.com/erickwendel_) ou até no 
+[Instagram](https://instagram.com/erickwendel_)
+
+Ah e pode pesquisar no [Google](https://google.com) ou
+[Yahoo](https://yahoo.com)
+
+vai que vai!
+
+replace \[(.*?)\]\(([http|https].*)?\) por <a href="$2">$1</a>
+Retorno:
+O <a href="https://erickwendeal.com">Mathues Cavagnari</a> faz palestras e você devia
+segui-lo lá no <a href="http://twitter.com/erickwendel_">Twitter</a> ou até no 
+<a href="https://instagram.com/erickwendel_">Instagram</a>
+
+Ah e pode pesquisar no <a href="https://google.com">Google</a> ou
+<a href="https://yahoo.com">Yahoo</a>
+
+vai que vai!
