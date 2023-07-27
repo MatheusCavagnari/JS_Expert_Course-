@@ -6,7 +6,7 @@
 
 ## Descrição
 
-O curso "JavaScript Expert" é uma jornada de aprendizado avançado em JavaScript ministrado pelo renomado desenvolvedor e instrutor Erick Wendel. Neste curso, você irá aprofundar seus conhecimentos em JavaScript e adquirir habilidades essenciais para desenvolver aplicações robustas e escaláveis.
+O curso "JavaScript Expert" é uma jornada de aprendizado avançado em JavaScript ministrado pelo renomado desenvolvedor e instrutor Erick Wendel. Neste curso, eu estou aprofundando meus conhecimentos em JavaScript e adquirindo habilidades essenciais para desenvolver aplicações robustas e escaláveis.
 
 ## Conteúdo
 
